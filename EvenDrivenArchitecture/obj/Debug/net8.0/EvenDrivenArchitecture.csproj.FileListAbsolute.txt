@@ -1,0 +1,4 @@
+E:\Project\EvenDrivenArchitecture\EvenDrivenArchitecture\obj\Debug\net8.0\EvenDrivenArchitecture.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\EvenDrivenArchitecture\EvenDrivenArchitecture\obj\Debug\net8.0\EvenDrivenArchitecture.AssemblyInfoInputs.cache
+E:\Project\EvenDrivenArchitecture\EvenDrivenArchitecture\obj\Debug\net8.0\EvenDrivenArchitecture.AssemblyInfo.cs
+E:\Project\EvenDrivenArchitecture\EvenDrivenArchitecture\obj\Debug\net8.0\EvenDrivenArchitecture.csproj.CoreCompileInputs.cache
