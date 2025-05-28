@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvenDrivenArchitecture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d65e7e56ae73a30ac75acb591d7c0ee987a02fde")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvenDrivenArchitecture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvenDrivenArchitecture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
