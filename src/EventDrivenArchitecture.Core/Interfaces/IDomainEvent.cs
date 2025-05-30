@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EvenDrivenArchitecture.Events;
-
-public record MessageCunsumer(string Content) : INotification;
+namespace EventDrivenArchitecture.Core.Interfaces;
+    public interface IDomainEvent:INotification
+    {
+    }

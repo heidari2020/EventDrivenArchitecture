@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA58E7B3-DAEC-4E77-9F9A-CF933C0F311E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventDrivenArchitecture.Worker", "EventDrivenArchitecture.Worker", "{7FD15520-A266-4627-9BD8-27DA37FE1EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDrivenArchitecture.Worker", "src\EventDrivenArchitecture.Worker\EventDrivenArchitecture.Worker.csproj", "{F83120C7-8999-424C-914A-EA1F48381B07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventDrivenArchitecture.Core", "EventDrivenArchitecture.Core", "{CAB2A7E9-2C48-44DA-A3CA-EC93F718DB14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventDrivenArchitecture.Infrastructure", "EventDrivenArchitecture.Infrastructure", "{438B3923-5009-4A49-980A-59703806A639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDrivenArchitecture.Infrastructure", "src\EventDrivenArchitecture.Infrastructure\EventDrivenArchitecture.Infrastructure.csproj", "{BA5CE354-86A0-4319-A2FB-EA4CD02A2DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDrivenArchitecture.Core", "src\EventDrivenArchitecture.Core\EventDrivenArchitecture.Core.csproj", "{8CFDB596-E354-4440-8F3A-141848302D52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F83120C7-8999-424C-914A-EA1F48381B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83120C7-8999-424C-914A-EA1F48381B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83120C7-8999-424C-914A-EA1F48381B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83120C7-8999-424C-914A-EA1F48381B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5CE354-86A0-4319-A2FB-EA4CD02A2DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5CE354-86A0-4319-A2FB-EA4CD02A2DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5CE354-86A0-4319-A2FB-EA4CD02A2DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5CE354-86A0-4319-A2FB-EA4CD02A2DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFDB596-E354-4440-8F3A-141848302D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFDB596-E354-4440-8F3A-141848302D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFDB596-E354-4440-8F3A-141848302D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFDB596-E354-4440-8F3A-141848302D52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7FD15520-A266-4627-9BD8-27DA37FE1EAA} = {FA58E7B3-DAEC-4E77-9F9A-CF933C0F311E}
+		{F83120C7-8999-424C-914A-EA1F48381B07} = {7FD15520-A266-4627-9BD8-27DA37FE1EAA}
+		{CAB2A7E9-2C48-44DA-A3CA-EC93F718DB14} = {FA58E7B3-DAEC-4E77-9F9A-CF933C0F311E}
+		{438B3923-5009-4A49-980A-59703806A639} = {FA58E7B3-DAEC-4E77-9F9A-CF933C0F311E}
+		{BA5CE354-86A0-4319-A2FB-EA4CD02A2DE2} = {438B3923-5009-4A49-980A-59703806A639}
+		{8CFDB596-E354-4440-8F3A-141848302D52} = {CAB2A7E9-2C48-44DA-A3CA-EC93F718DB14}
+	EndGlobalSection
+EndGlobal
