@@ -31,7 +31,7 @@ namespace EventDrivenArchitecture;
         {
             await  _mediator.Publish(new ProductCreated(Guid.NewGuid(), DateTime.UtcNow)); ;
 
-            await Task.Delay(1000, stoppingToken);
+            await Task.Delay(10000, stoppingToken);
         }
     }
 }

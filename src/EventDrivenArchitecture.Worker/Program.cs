@@ -1,6 +1,6 @@
 ﻿
 using EventDrivenArchitecture;
-using EventDrivenArchitecture.Infrastructure;
+using EventDrivenArchitecture.src.Domain.Events;
 using EventDrivenArchitecture.src.Infrastructure;
 using MassTransit;
 using MassTransit.Configuration;
@@ -16,7 +16,7 @@ using Polly.Registry;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHostedService<Worker>();
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ProductCreated).Assembly));
 builder.Services.AddMassTransit(configurator =>
 {
     configurator.SetKebabCaseEndpointNameFormatter();
