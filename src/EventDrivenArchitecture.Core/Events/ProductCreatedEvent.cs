@@ -8,4 +8,4 @@ using System.Threading.Tasks;
 
 namespace EventDrivenArchitecture.src.Domain.Events;
 
-public record ProductCreated(Guid Id, DateTime Createdat) : IDomainEvent;
+public record ProductCreatedEvent(Guid Id, DateTime Createdat) : IDomainEvent;

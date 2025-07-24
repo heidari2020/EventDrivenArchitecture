@@ -1,4 +1,5 @@
-﻿using EventDrivenArchitecture.src.Domain.Events;
+﻿using EventDrivenArchitecture.Core.Interfaces;
+using EventDrivenArchitecture.src.Domain.Events;
 using EventDrivenArchitecture.src.Infrastructure;
 using MassTransit;
 using MediatR;
@@ -16,8 +17,8 @@ namespace EventDrivenArchitecture;
 {
     private readonly ILogger<Worker> _logger;
     private readonly IMediator _mediator;
-    private readonly ProductCreatedConsumer _consumer;
-    public Worker(ILogger<Worker> logger, IMediator mediator, ProductCreatedConsumer consumer)
+    private readonly IEventConsumer _consumer;
+    public Worker(ILogger<Worker> logger, IMediator mediator, IEventConsumer consumer)
     {
         _logger = logger;
         _mediator = mediator;
@@ -25,8 +26,8 @@ namespace EventDrivenArchitecture;
     }
     public override async Task StartAsync(CancellationToken cancellationToken)
     {
+        await _consumer.StartConsumingAsync();
         await base.StartAsync(cancellationToken);
-       await _consumer.Subscribe();
     }
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -34,14 +35,14 @@ namespace EventDrivenArchitecture;
 
         while (!stoppingToken.IsCancellationRequested)
         {
-            await  _mediator.Publish(new ProductCreated(Guid.NewGuid(), DateTime.UtcNow)); ;
+            await  _mediator.Publish(new ProductCreatedEvent(Guid.NewGuid(), DateTime.UtcNow)); ;
 
-            await Task.Delay(10000, stoppingToken);
+            await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken);
         }
     }
     public override async Task StopAsync(CancellationToken cancellationToken)
     {
-        await _consumer.Stop();
+        await _consumer.StopConsumingAsync();
         await base.StopAsync(cancellationToken);
     }
 }
